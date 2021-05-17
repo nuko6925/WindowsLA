@@ -4,7 +4,7 @@ import java.lang.management.ManagementFactory;
 
 public class Main {
     public static void main(String[] args) {
-        Overlay ol = new Overlay("WindowsLA", 420, 80);
+        Overlay ol = new Overlay("WindowsLA", 440, 80);
         ol.add(new DrawCanvas());
         ol.setVisible(true);
         ol.setAlwaysOnTop(true);
@@ -58,7 +58,7 @@ class DrawCanvas extends JPanel {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D)g;
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        g.setFont(new Font("Yu Gothic UI", Font.TRUETYPE_FONT, 24));
+        g.setFont(new Font("Yu Gothic UI", Font.TRUETYPE_FONT, 22));
         g.setColor(Color.LIGHT_GRAY);
         setBackground(new Color(0f, 0f, 0f, 0f));
         g.drawString("Windows のライセンス認証", 5, 24);
