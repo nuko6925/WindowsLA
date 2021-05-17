@@ -1,10 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
-import java.lang.management.ManagementFactory;
 
 public class Main {
     public static void main(String[] args) {
-        Overlay ol = new Overlay("WindowsLA", 440, 80);
+        Overlay ol = new Overlay("WindowsLA", 460, 80);
         ol.add(new DrawCanvas());
         ol.setVisible(true);
         ol.setAlwaysOnTop(true);
